@@ -16,7 +16,7 @@ $app->get('/', function () use ($app) {
 });
 
 $app->get('login', function () {
-    return 'Hello login';
+    return view('test', ['name' => 'James']);
 });
 
 $app->get('form', function () {
