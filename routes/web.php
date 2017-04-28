@@ -14,3 +14,15 @@
 $app->get('/', function () use ($app) {
     return $app->version();
 });
+
+$app->get('login', function () {
+    return 'Hello login';
+});
+
+$app->get('form', function () {
+    return 'Hello form';
+});
+
+$app->get('users', function () {
+    return \App\User::all();
+});
